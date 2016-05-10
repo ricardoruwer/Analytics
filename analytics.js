@@ -154,7 +154,7 @@ gapi.analytics.ready(function() {
 
     var total_active = 0;
     [].forEach.call(values_active, function(element) {
-      var value_active = parseInt(element.innerHTML);
+      var value_active = parseInt(element.innerHTML.replace('.', ''));
       total_active += value_active;
     });
 
@@ -166,7 +166,7 @@ gapi.analytics.ready(function() {
     else {
       var active = document.getElementsByClassName('ga-total-active')[0];
     }
-    active.innerHTML = total_active;
+    active.innerHTML = addDots(total_active);
   }
 
 
@@ -183,7 +183,7 @@ gapi.analytics.ready(function() {
 
     var total = 0;
     [].forEach.call(values, function(el) {
-      var value = parseInt(el.innerHTML);
+      var value = parseInt(el.innerHTML.replace('.', ''));
       total += value;
     });
 
@@ -195,7 +195,7 @@ gapi.analytics.ready(function() {
     else {
       var session = document.getElementsByClassName('ga-total-sessions')[0];
     }
-    session.innerHTML = total;
+    session.innerHTML = addDots(total);
   }
 
 
@@ -212,7 +212,7 @@ gapi.analytics.ready(function() {
 
     var total = 0;
     [].forEach.call(values, function(el) {
-      var value = parseInt(el.innerHTML);
+      var value = parseInt(el.innerHTML.replace('.', ''));
       total += value;
     });
 
@@ -224,7 +224,7 @@ gapi.analytics.ready(function() {
     else {
       var unique = document.getElementsByClassName('ga-total-unique')[0];
     }
-    unique.innerHTML = total;
+    unique.innerHTML = addDots(total);
   }
 
 
@@ -242,7 +242,7 @@ gapi.analytics.ready(function() {
 
     var mobile = 0;
     [].forEach.call(values, function(el) {
-      var value = parseInt(el.innerHTML);
+      var value = parseInt(el.innerHTML.replace('.', ''));
       mobile += value;
     });
 
@@ -255,7 +255,7 @@ gapi.analytics.ready(function() {
       else {
         var device = document.getElementsByClassName('ga-total-mobile')[0];
       }
-      device.innerHTML = mobile;
+      device.innerHTML = addDots(mobile);
     }
 
     //desktop
@@ -263,7 +263,7 @@ gapi.analytics.ready(function() {
 
     var desktop = 0;
     [].forEach.call(values, function(el) {
-      var value = parseInt(el.innerHTML);
+      var value = parseInt(el.innerHTML.replace('.', ''));
       desktop += value;
     });
 
@@ -276,7 +276,7 @@ gapi.analytics.ready(function() {
       else {
         var device = document.getElementsByClassName('ga-total-desktop')[0];
       }
-      device.innerHTML = desktop;
+      device.innerHTML = addDots(desktop);
     }
 
 
