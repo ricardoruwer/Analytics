@@ -112,4 +112,4 @@ You can add some personal CSS like:
 
 
 ## Example
-![Analytics Example](http://i.imgur.com/2bhSi4t.png)
+![Analytics Example](http://i.imgur.com/o2up1oV.png)
