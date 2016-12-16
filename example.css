@@ -1,0 +1,109 @@
+/* TEXTS */
+.ga-active::after {
+    content:" active now";
+    display:block;
+    color:DarkGrey;
+}
+
+.ga-sessions::before {
+    content:"Sessions: ";
+}
+
+.ga-unique::before {
+    content:"Unique: ";
+}
+
+.ga-mobile::before {
+    content:"Mobile: ";
+}
+
+.ga-desktop::before {
+    content:"Desktop: ";
+}
+
+.ga-total-active::before {
+    content:"Active: ";
+}
+
+.ga-total-sessions::before {
+    content:"Sessions: ";
+}
+
+.ga-total-unique::before {
+    content:"Unique: ";
+}
+
+.ga-total-mobile::before {
+    content:"Mobile: ";
+}
+
+.ga-total-desktop::before {
+    content:"Desktop: ";
+}
+
+/* STYLES */
+.ga-project p::before, .ga-project p::after {
+    font-weight:400;
+    font-size:13px;
+    line-height:13px;
+}
+
+.ga-project {
+    text-align:center;
+}
+
+.ga-project {
+    float:left;
+    width: calc(25% - 30px);
+    background-color:white;
+    padding:15px;
+    margin:15px;
+}
+
+.ga-project p {
+    margin-bottom:0;
+    font-weight:700;
+}
+
+.ga-active {
+    margin-bottom:15px !important;
+    font-size:28px;
+    line-height:30px;
+}
+
+.ga-project .ga-name {
+    margin-top:0;
+}
+
+.ga-percent {
+    font-weight:400;
+    color:DarkGrey;
+    font-size:12px;
+}
+
+/* TOTALS */
+.ga-totals {
+    padding:15px;
+    float:right;
+    width:calc(66.6666% - 30px);
+    margin-top:35px;
+}
+
+.ga-totals p {
+    margin-bottom:0;
+    font-weight:700;
+    font-size:15px;
+    width:20%;
+    display:inline-block;
+}
+
+.ga-totals p::before {
+    font-weight:400;
+}
+
+/* CHART */
+.ga-chart {
+    text-align:center;
+    float:left;
+    width:33.3333%;
+}
