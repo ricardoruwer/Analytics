@@ -46,6 +46,22 @@ And then add the **analytics.js**:
 <script src="analytics.js"></script>
 ```
 
+## FAQ
+**How can I get my ga:id?**
+- Log into your Analytics account and open the project, the ga:id will be at your URL, for example, the URL will be something like: https://analytics.google.com/analytics/web/#report/defaultid/a111w222p99999 and your ga:id is the number after the **p**, in this example: 99999.
+
+**How can I get my client_id?**
+- Go to [Google Console](https://console.developers.google.com)
+- Select the Analytics API
+- Create the project
+- Activate
+- Create credentials
+- Add your javascript origins (like *localhost* and the *url of your website*)
+- Configure Consent Screen
+- Choose Web Application
+- Create!
+
+
 ## Usage
 
 Add the button to authorize your access on Google:
